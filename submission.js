@@ -1,4 +1,4 @@
-let array = []
+let array = [1, 2, 3]
 const findSum = array.reduce((accumulator, current) => {
     return accumulator + current;
 }, 0);

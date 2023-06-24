@@ -1,7 +1,10 @@
-let array = [1, 2, 3]
-const findSum = array.reduce((accumulator, current) => {
+const findSum = function(array){
+return array.reduce((accumulator, current) => {
     return accumulator + current;
 }, 0);
+}
+const sum = findSum(array);
+
 
 const findFrequency = function(array) {
   // your code here - don't forget to return an object!

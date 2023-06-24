@@ -3,7 +3,7 @@ return array.reduce((accumulator, current) => {
     return accumulator + current;
 }, 0);
 }
-const sum = findSum(array);
+
 
 
 const findFrequency = function(array) {

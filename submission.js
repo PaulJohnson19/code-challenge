@@ -10,8 +10,21 @@ const findFrequency = function(array) {
 };
 
 const isPalindrome = function(str) {
-  // your code here - don't forget to return a boolean!
-};
+    // your code here - don't forget to return a boolean!
+    var str = str.toLowerCase()
+    var splitStr = str.split("")
+    var backward = splitStr.reverse()
+    var finished = backward.join("")
+    
+    if (str === finished) {
+        return true
+        
+    } else {
+        return false
+        
+    }
+   
+  };
 
 const largestPair = function(array) {
   // your code here - don't forget to return a number!

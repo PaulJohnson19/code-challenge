@@ -49,7 +49,7 @@ const removeParenth = function(str) {
 const scoreScrabble = function(str) {
   // your code here - don't forget to return a number!
       let score = 0;
-    const letterPoint = {
+    var letterPoint = {
       'a': 1, 'e': 1, 'i': 1, 'o': 1, 'u': 1, 'l': 1, 
       'n': 1, 'r': 1, 's': 1, 't': 1, 'd': 2, 
       'g': 2, 'b': 3, 'c': 3, 'm': 3, 'p': 3,

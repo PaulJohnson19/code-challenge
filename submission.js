@@ -28,6 +28,17 @@ const isPalindrome = function(str) {
 
 const largestPair = function(array) {
   // your code here - don't forget to return a number!
+     var notoriousBig = []
+   array.forEach((number, i) => {
+    if (i < array.length) {
+      let product = number * array[i + 1];
+      if (notoriousBig === [] || product > notoriousBig) {
+          notoriousBig = product;
+      }
+    }
+  });
+
+  return notoriousBig;
 };
 
 const removeParenth = function(str) {

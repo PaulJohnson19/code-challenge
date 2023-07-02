@@ -7,7 +7,25 @@ const findSum = function(array) {
 
 const findFrequency = function(array) {
   // your code here - don't forget to return an object!
-};
+      let occurr = {};
+    var most = null;
+    var least = null;
+    
+    for (let i = 0; i < array.length; i++) {
+      let element = array[i];
+      occurr[element] = (occurr[element] || 0) + 1;
+    }
+    for (let element in occurr) {
+      if (most === null || occurr[element] > occurr[most]) {
+        most = element;
+      }
+  
+      if (least === null || occurr[element] < occurr[least]) {
+        least = element;
+      }
+    }
+    return {most: most, least: least};
+  };
 
 const isPalindrome = function(str) {
     // your code here - don't forget to return a boolean!
@@ -20,10 +38,8 @@ const isPalindrome = function(str) {
         return true
         
     } else {
-        return false
-        
+        return false 
     }
-   
   };
 
 const largestPair = function(array) {
